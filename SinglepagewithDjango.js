@@ -1,8 +1,8 @@
 function gettext(id) {
     fetch(`sections/${id}`)
     .then(function(response) {
-        return response.text())
-    }
+        return response.text()})
+        
     .then(function(text) {
         document.querySelector('#content').innerHTML = text;
     });
